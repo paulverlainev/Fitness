@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Icon="AvaRes.logo-abd.ico"
+        x:Class="FitnessCenter.Cl2"
+        Title="Клиенты">
+        <Grid>
+            <DataGrid Name="Clients" x:CompileBindings="False" Width="200" Margin="10 10 0 0">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="id" CellTemplate="{Binding id}"></DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Фамилия" CellTemplate="{Binding surname}"></DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Имя" CellTemplate="{Binding name}"></DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Номер телефона" CellTemplate="{Binding number}"></DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Дата рождения" CellTemplate="{Binding dateofbirth}"></DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Пол" CellTemplate="{Binding gender}"></DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Скидка" CellTemplate="{Binding discount}"></DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel>
+                <TextBox Name="Searchs" Width="200" Margin="10 10 0 0"></TextBox>
+                <Button Name="Searcher" Content="Поиск" Click="Search"></Button>
+                <Button Name="Res" Content="Сброс" Click="Reset"></Button>
+            </StackPanel>
+            <StackPanel>
+            </StackPanel>
+        </Grid>
+</Window>

@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Icon="AvaRes.logo-abd.ico"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="FitnessCenter.Reg"
+        Title="Регистрация">
+        <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel>
+                        <TextBlock>Фамилия:</TextBlock>
+                        <TextBox Name="Surname" Width="200"></TextBox>
+                        <TextBlock>Имя:</TextBlock>
+                        <TextBox Name="Name" Width="200"></TextBox>
+                        <TextBlock>Номер телефона:</TextBlock>
+                        <TextBox Name="Number" Width="200"></TextBox>
+                        <TextBlock>Дата рождения:</TextBlock>
+                        <TextBox Name="Date" Width="200"></TextBox>
+                        <TextBlock>Пол:</TextBlock>
+                        <TextBox Name="Gender" Width="200"></TextBox>
+                        <TextBlock>Скидка:</TextBlock>
+                        <TextBox Name="Discount" Width="200"></TextBox>
+                        <TextBlock>Пароль:</TextBlock>
+                        <TextBox Name="Password" Width="200"></TextBox>
+                    </StackPanel>
+                    <StackPanel>
+                        <Button Name="Reggs" Content="Зарегистрироваться" Click="Regg"></Button>
+                    </StackPanel>
+                </StackPanel>
+        </StackPanel>
+</Window>
